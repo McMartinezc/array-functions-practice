@@ -7,6 +7,7 @@
  */
 function filterWithdraws(movements) {
   // TODO: Implementame
+ return movements.filter(number=>number<0);
 }
 
 // Caso de prueba 1: Array con varios movimientos de entrada y retirada.

@@ -6,7 +6,9 @@
  *
  * @param {array} movements Array de numbers de movimientos bancarios
  */
-function bankStatement(movements) {}
+function bankStatement(movements) {
+    return movements.map((number)=> number<0 ? `Withdraw: ${Math.abs(number)}` : `Diposit: ${number}`);
+}
 
 // Caso de prueba 1: Array con varios movimientos de entrada y retirada.
 const test1 = [100, -50, 20, -30, 10];
